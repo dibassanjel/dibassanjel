@@ -26,3 +26,13 @@ function toggleMenu() {
     const menu = document.querySelector('.rightside ul');
     menu.classList.toggle('show');
 }
+
+// Close the menu if clicked outside
+document.addEventListener('click', function(event) {
+    const menu = document.querySelector('.rightside ul');
+    const menuButton = document.querySelector('.hamburger-menu');
+
+    if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
+        menu.classList.remove('show');
+    }
+});
