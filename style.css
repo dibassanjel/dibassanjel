@@ -99,6 +99,7 @@ body {
 
 @media (max-width: 768px) {
     .rightside ul {
+        display: none;
         flex-direction: column;
         position: fixed;
         top: 0;
@@ -121,6 +122,7 @@ body {
         margin: 20px 0;
     }
 }
+
 
 .centered-content {
     text-align: center;
